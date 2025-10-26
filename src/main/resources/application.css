@@ -1,0 +1,92 @@
+/* Global Styles */
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial';
+    -fx-background-color: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+}
+
+/* Title and Text Styles */
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d47a1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #546e7a;
+}
+
+.large {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e88e5;
+}
+
+/* Input Fields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.text-field:focused {
+    -fx-border-color: #42a5f5;
+    -fx-effect: dropshadow(gaussian, rgba(66,165,245,0.3), 5, 0, 0, 2);
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #64b5f6, #1e88e5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 16px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #90caf9, #42a5f5);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1e88e5, #1565c0);
+}
+
+/* Weather Info Panels */
+.weather-card {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 4);
+}
+
+.weather-icon {
+    -fx-fit-to-width: true;
+    -fx-preserve-ratio: true;
+}
+
+   /*Status and Alerts*/
+.status-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #555;
+}
+
+.error-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #c62828;
+    -fx-font-weight: bold;
+}
